@@ -81,7 +81,7 @@ static bool r2r_chdir(const char *argv0) {
 		char *p = strstr (src_path, R_SYS_DIR "binr"R_SYS_DIR"r2r"R_SYS_DIR"r2r");
 		if (p) {
 			*p = 0;
-			strcat (src_path, R_SYS_DIR"test"R_SYS_DIR);
+			strcat (src_path, R_SYS_DIR"test");
 			if (r_file_is_directory (src_path)) {
 				(void)chdir (src_path);
 				eprintf ("Running from %s\n", src_path);
